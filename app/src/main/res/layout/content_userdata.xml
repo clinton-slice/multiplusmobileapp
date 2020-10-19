@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.netformular.multiplusmobileapp.activity.UserdataActivity"
+    tools:showIn="@layout/activity_userdata">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingFirstname"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/firstname"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingLastname"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/lastname"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingEmail"
+        android:layout_marginBottom="10dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email_address_hint"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/savedataButton"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:text="@string/save"/>
+
+</LinearLayout>
